@@ -5,7 +5,7 @@ var keys = require("./keys");
 // Requiring Twitter
 var Twitter = require('twitter');
 
-// Rquiring OMDB Rquest
+// Rquiring OMDB Rquest npm package.
 var request = require('request');
 // Rquiring Spotify
 var Spotify = require('node-spotify-api');
@@ -49,7 +49,7 @@ switch(userInput[2]) {
     break;
 }
 
-// 
+// In this function we are sending request to twitter website.
 function myTweets() {
    
        
@@ -62,6 +62,7 @@ function myTweets() {
 
 } 
 
+// In this function we are sending the request to the omdb website.
 function movie(){
   
 
@@ -72,6 +73,7 @@ function movie(){
 
 }
 
+// In this function we are sending request to spotify website.
 function searchSpotify() {
     console.log(userChoice)
     spotify.search({ type: 'track', query: userChoice }, function(err, data) {
@@ -92,11 +94,3 @@ function searchSpotify() {
 
 
 
-// request("http://www.omdbapi.com/?t=" + client + "&y=&plot=short&apikey=40e9cece", function(error, response, body){
-//     console.log(body);
-//     if(!error && response.statusCode === 200) {
-//         console.log("The release data is: " + JSON.parse(body.Release));
-//     }
-// });
-// request("https://www.npmjs.com/package/node-spotify-api");
-// console.log(client);

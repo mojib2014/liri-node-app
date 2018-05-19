@@ -2,25 +2,49 @@
 
 ## What the project does
 
-1. LIRI is a command line node app that takes in parameters and give you back data.
-2. It is a Language Interpretation and Recognition Interface application.
-3. It's similer to SIRI in iphone but it can only show my Tweets.
+1. LIRI is a Language Interpretation and Recognition Interface. Use LIRI to get your latest tweets,      find out about a song, or a movie, or just choose a random action from your own random file.  
+3. It's similer to SIRI in iphone.
 
-## Why the project is important
+## Installs 
+The package.json lists dependent node packages, but for your convenvice, these are the ones to install.
 
-1. 
+* Twitter
+  npm install twitter
 
+* Spotify
+  npm install spotify
 
+* Request
+  npm install request
 
+* FS
+  npm install fs
 
+* Simple Node Logger
+  npm install simple-node-logger
 
-## How to get started 
+## Get Started
+  Here's a quick rundom of the commands you can use in LIRI.
 
-1. In order to clone this app to your computer and be able to run it you need to install some files(dependency files).
-* npm init
-* npm i + the name of the file.
-* You will need to install npm version 6.0.1 to run the application.
+* Get Tweets
+  Retrieves up to your latest 20 tweets:
 
+  node liri.js my-tweets
+
+* Get Song Info
+  Retrieves song information for a track:
+
+  node liri.js spotify-this-song "American Girl"
+
+* Get Movie Info
+  Retrieves movie information for a movie:
+
+  node liri.js movie-this "Star Wars"
+
+* Get Random Info
+  Gets random text inside a file and does what it says:
+
+  node liri.js do-what-it-says
 
 ## Tools Used 
 
@@ -30,11 +54,17 @@
 4. OMDB API;
 5. Spotify API;
 
-
-
-
 ## Maintanin and Contributed by
 
 [Name]Mojib Mohammad;
 [Email](mojib_monir@yahoo.com);
 [Phone#]+1(510)359-2953;
+
+
+
+
+
+
+
+
+Installs
